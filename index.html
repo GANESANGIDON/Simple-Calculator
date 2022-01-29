@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title> Simple Calculator </title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ganesan.R" />
+  <meta name="description" content="simple Calculator using HTML5, CSS3 and JavaScript" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <!--custom CSS stylesheet-->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="calculator">
+    <!--Output screen container-->
+    <div id="output-container">
+      <input type="text" name="input_box" id="output-display" placeholder="0" />
+    </div>
+    <!--buttons container-->
+    <div id="button-container">
+      <!--Clear button-->
+      <button type="button" class="button" id="clear" onClick="clr()">C</button>
+      <!--Delete button-->
+      <button type="button" class="button" onClick="del()">DEL</button>
+      <!--Arithmetic symbols and number button-->
+      <button type="button" class="button" onClick="display('%')">%</button>
+      <button type="button" class="button" onClick="display('+')">+</button>
+      <button type="button" class="button" onClick="display('7')">7</button>
+      <button type="button" class="button" onClick="display('8')">8</button>
+      <button type="button" class="button" onClick="display('9')">9</button>
+      <button type="button" class="button" onClick="display('-')">-</button>
+      <button type="button" class="button" onClick="display('4')">4</button>
+      <button type="button" class="button" onClick="display('5')">5</button>
+      <button type="button" class="button" onClick="display('6')">6</button>
+      <button type="button" class="button" onClick="display('*')">*</button>
+      <button type="button" class="button" onClick="display('1')">1</button>
+      <button type="button" class="button" onClick="display('2')">2</button>
+      <button type="button" class="button" onClick="display('3')">3</button>
+      <button type="button" class="button" onClick="display('/')">/</button>
+      <button type="button" class="button" onClick="display('.')">.</button>
+      <button type="button" class="button" onClick="display('0')">0</button>
+      <!--calculate button-->
+      <button type="button" class="button" onClick="calculate()" id="btn-equal">=</button>
+    </div>
+  </div>
+  <!--Javascript-->
+  <script src="./script.js"></script>
+</body>
+
+</html>
